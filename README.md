@@ -60,7 +60,7 @@ capstone-main/
    - Clone o repositório:
 
      ```bash
-     git clone <URL_DO_REPOSITORIO>
+     git clone https://github.com/heyluannlucas/ciencia_de_dados.git
      cd capstone-main
      ```
 
