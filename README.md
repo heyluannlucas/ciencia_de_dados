@@ -61,7 +61,7 @@ capstone-main/
 
      ```bash
      git clone https://github.com/heyluannlucas/ciencia_de_dados.git
-     cd capstone-main
+     cd ciencia_de_dados
      ```
 
    - Instale as dependências:
