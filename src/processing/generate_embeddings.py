@@ -1,13 +1,12 @@
 from sentence_transformers import SentenceTransformer
 import os
 import pickle
-import numpy as np
+
 
 # Caminhos
 PROCESSED_DOCS_FOLDER = "data/processed/"
 EMBEDDINGS_FILE = "embeddings/document_embeddings.pkl"
 
-# Modelo de Embeddings (ATUALIZADO)
 MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
 model = SentenceTransformer(MODEL_NAME)
 

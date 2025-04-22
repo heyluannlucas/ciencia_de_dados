@@ -5,15 +5,15 @@ import re
 RAW_DOCS_FOLDER = "data/raw/docs/"
 PROCESSED_DOCS_FOLDER = "data/processed/"
 
-# Criar a pasta de saída caso não exista
+# caso não exista
 os.makedirs(PROCESSED_DOCS_FOLDER, exist_ok=True)
 
 
 def clean_text(text):
     """Remove espaços desnecessários e normaliza o texto"""
-    text = re.sub(r"\s+", " ", text)  # Remove espaços extras
-    text = re.sub(r"[^\x00-\x7F]+", "", text)  # Remove caracteres não ASCII
-    text = re.sub(r"Navigation Menu.*?Explore All features", "", text, flags=re.DOTALL)  # Remove menus do GitHub
+    text = re.sub(r"\s+", " ", text)
+    text = re.sub(r"[^\x00-\x7F]+", "", text)
+    text = re.sub(r"Navigation Menu.*?Explore All features", "", text, flags=re.DOTALL)
     text = text.strip()
     return text
 

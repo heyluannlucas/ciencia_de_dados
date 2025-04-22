@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-# URL do repositório Awesome no GitHub
 URL = "https://raw.githubusercontent.com/sindresorhus/awesome/main/readme.md"
 
 

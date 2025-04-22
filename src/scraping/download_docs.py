@@ -7,7 +7,6 @@ from bs4 import BeautifulSoup
 LINKS_FILE = "data/raw/awesome_links.json"
 OUTPUT_FOLDER = "data/raw/docs/"
 
-# Criar a pasta de saída caso não exista
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 
